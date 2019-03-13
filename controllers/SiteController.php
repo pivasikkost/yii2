@@ -125,4 +125,14 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+
+    /**
+     * Displays custom say page.
+     *
+     * @return string
+     */
+    public function actionSay($message = 'Hello!')
+    {
+        return $this->render('say', ['message' => $message]);
+    }
 }
